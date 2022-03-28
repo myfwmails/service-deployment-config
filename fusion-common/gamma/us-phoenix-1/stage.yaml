@@ -1,0 +1,35 @@
+apiVersion: spectra.fa.oracle.com/v1
+kind: SpectraStage
+spec:
+  org: fusioncommon
+  service: fusion-common
+  name: alpha
+  region: us-phoenix-1
+  tenancyId: ocid1.tenancy.oc1..aaaaaaaan4v2krimxd6odnrtvichy5rpapvzrojmauu26jrdgixu6ttteuxa
+  compartmentId: ocid1.compartment.oc1..aaaaaaaacty6fcy7qg3sx2p3kdpnsm4bgmhu35hfqbs5r5bhclzotlavpqdq
+  platformVersion: 0.15.6
+  configs:
+    spectra:
+      tenancy:
+        name: fashareddev
+        id: ocid1.tenancy.oc1..aaaaaaaan4v2krimxd6odnrtvichy5rpapvzrojmauu26jrdgixu6ttteuxa
+        type: dev
+        homeRegion: us-phoenix-1
+        networksCompartmentId: ocid1.compartment.oc1..aaaaaaaapfc35qsxsdvrtrihwlt6mxdxwttdg2zlc7fipv3aclg3un4v6e3a
+        spectraCompartmentId: ocid1.compartment.oc1..aaaaaaaacty6fcy7qg3sx2p3kdpnsm4bgmhu35hfqbs5r5bhclzotlavpqdq
+      service:
+        name: fusion-common
+        pathSegment: 'api/fusion-common'
+      stage:
+        name: alpha
+        region: us-phoenix-1
+        networkNumber: "208"
+        silverImageId: ocid1.image.oc1.phx.aaaaaaaax5hcmdnwuj6r7em7uhdxt6y7jrrgcz4vb7vfkyiy6adcpsolidja-gamma
+        transitNatSubnetId: ocid1.subnet.oc1.phx.aaaaaaaa47wpvm3ybxwuvsqcmksa7nngxs4i2bolmjhnau5f72mb2isdhn5a
+        generalSSHPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAluCNdW+iFnPwqfXwvBNxl+5mnYqTlHTJcRm5vG+Tl3Xc4Ss+1Rzc94w/Ne076aUF6IbslpOm1PLsHzaZNTmADhktf+9/iwqUaCh71wE+xFy/YSTl48ydyA8fqG549ZH611nm/EElVn4EOj/8lQAZszc63DMUhifeDhuoEqQnmXXpJBCuD6Zp8HSZLyIjdyw+zgWSjpuiswtNTiPntwN2tFn1mgeLdSn5mXd/nqVv7/TxmJYGfW6BVPdnQWhxjFPyt7f0/yyRhMSw0PPdfUBn6xTgjbwNa/zEo3iGkxE0Jg+1wn8KnRXjGLmH7FcjABWXZD3fc1vP/HPJPAbwfIwHTQ== sp_setup_user
+        workerSSHPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAluCNdW+iFnPwqfXwvBNxl+5mnYqTlHTJcRm5vG+Tl3Xc4Ss+1Rzc94w/Ne076aUF6IbslpOm1PLsHzaZNTmADhktf+9/iwqUaCh71wE+xFy/YSTl48ydyA8fqG549ZH611nm/EElVn4EOj/8lQAZszc63DMUhifeDhuoEqQnmXXpJBCuD6Zp8HSZLyIjdyw+zgWSjpuiswtNTiPntwN2tFn1mgeLdSn5mXd/nqVv7/TxmJYGfW6BVPdnQWhxjFPyt7f0/yyRhMSw0PPdfUBn6xTgjbwNa/zEo3iGkxE0Jg+1wn8KnRXjGLmH7FcjABWXZD3fc1vP/HPJPAbwfIwHTQ== sp_setup_user
+        generalInstanceShape: VM.Standard.E3.Flex
+        corpnat: true
+        workerNodePoolShape: VM.Standard.E3.Flex
+        workerNodePoolScaleFactor: "6"
+        octoPrdApp: fusion-common
