@@ -1,4 +1,4 @@
-apiVersion: spectra.fa.oracle.com/v1
+stage-----apiVersion: spectra.fa.oracle.com/v1
 kind: SpectraStage
 spec:
   org: fusioncommon
